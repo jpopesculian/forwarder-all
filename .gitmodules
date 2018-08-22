@@ -10,9 +10,6 @@
 [submodule "forwarder-app"]
 	path = forwarder-app
 	url = git@github.com:jpopesculian/forwarder
-[submodule "forwarder-client"]
-	path = forwarder-client
-	url = git@github.com:jpopesculian/forwarder-client
 [submodule "chainable-message"]
 	path = chainable-message
 	url = git@github.com:jpopesculian/evt-chainable_message
