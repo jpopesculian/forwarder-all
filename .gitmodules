@@ -1,0 +1,27 @@
+[submodule "server-component"]
+	path = server-component
+	url = git@github.com:jpopesculian/forwarder-server-component
+[submodule "sms-component"]
+	path = sms-component
+	url = git@github.com:jpopesculian/forwarder-sms-component
+[submodule "twilio-lib-component"]
+	path = twilio-lib-component
+	url = git@github.com:jpopesculian/forwarder-twilio-lib-component
+[submodule "forwarder-app"]
+	path = forwarder-app
+	url = git@github.com:jpopesculian/forwarder
+[submodule "forwarder-client"]
+	path = forwarder-client
+	url = git@github.com:jpopesculian/forwarder-client
+[submodule "chainable-message"]
+	path = chainable-message
+	url = git@github.com:jpopesculian/evt-chainable_message
+[submodule "forwarder-schema"]
+	path = forwarder-schema
+	url = git@github.com:jpopesculian/forwarder-schema
+[submodule "forwarder-models"]
+	path = forwarder-models
+	url = git@github.com:jpopesculian/forwarder-models
+[submodule "forwarder-host"]
+	path = forwarder-host
+	url = git@github.com:jpopesculian/forwarder-host
