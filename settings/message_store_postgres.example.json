@@ -1,0 +1,7 @@
+{
+  "dbname": "message_store",
+  "host": "postgres",
+  "port": 5432,
+  "user": "postgres",
+  "password": ""
+}

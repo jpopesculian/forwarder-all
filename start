@@ -1,0 +1,14 @@
+#!/bin/bash
+
+set -Eeo pipefail
+
+cd ./forwarder-models
+
+bundle exec ruby wait-for-db.rb
+rake db:migrate
+
+cd ../forwarder-app
+
+bundle exec puma config.ru
+
+exec "$@"

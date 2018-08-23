@@ -1,0 +1,44 @@
+version: "3"
+
+services:
+  forwarder:
+    build: .
+    hostname: forwarder
+    container_name: forwarder
+    ports:
+      - 9292:9292
+    expose:
+      - "9292"
+    volumes:
+      - ./settings:/src/settings
+    networks:
+      - front-tier
+      - back-tier
+
+  postgres:
+    image: jpopesculian/eventide-postgres
+    hostname: postgres
+    container_name: postgres
+    expose:
+      - "5432"
+    volumes:
+      - forwarder-postgres-data:/var/lib/postgresql/data
+    networks:
+      - back-tier
+
+  rabbitmq:
+    image: rabbitmq:alpine
+    container_name: rabbitmq
+    expose:
+    - "15672"
+    - "5672"
+    networks:
+      - back-tier
+
+
+volumes:
+  forwarder-postgres-data:
+
+networks:
+  front-tier:
+  back-tier:
